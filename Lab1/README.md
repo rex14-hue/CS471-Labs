@@ -10,12 +10,12 @@
 ### HTTP Request
 The HTTP GET request was captured using Wireshark.
 
-![HTTP Request](w1.png)
+![HTTP Request](W1.jpg)
 
 ### HTTP Response
 The server returned an HTTP 200 OK response.
 
-![HTTP Response](w2.png)
+![HTTP Response](W2.jpg)
 
 ---
 
@@ -24,27 +24,27 @@ The server returned an HTTP 200 OK response.
 ### Follow TCP Stream
 The TCP stream shows the communication between the client and the server.
 
-![Follow TCP Stream](w3.png)
+![Follow TCP Stream](W3.jpg)
 
 ### TCP Three-Way Handshake
 The connection was established using SYN, SYN-ACK, and ACK.
 
-![TCP Three-Way Handshake](w4.png)
+![TCP Three-Way Handshake](W4.jpg)
 
 ### Sequence and Acknowledgment Numbers
 The SYN-ACK packet shows relative Sequence Number = 0 and Acknowledgment Number = 1.
 
-![Sequence and Acknowledgment Numbers](w5.png)
+![Sequence and Acknowledgment Numbers](W5.jpg)
 
 ### TCP Data Transfer
 The captured TCP segment contains 1300 bytes of data.
 
-![TCP Data Transfer](w6.png)
+![TCP Data Transfer](W6.jpg)
 
 ### TCP Termination
 FIN-ACK and ACK packets were observed during connection termination.
 
-![TCP Termination](w7.png)
+![TCP Termination](W7.jpg)
 
 ---
 
@@ -59,7 +59,7 @@ The selected UDP packet contains the following information:
 | UDP Length | 158 bytes |
 | UDP Payload | 150 bytes |
 
-![UDP Analysis](w8.png)
+![UDP Analysis](W8.jpg)
 
 ---
 
