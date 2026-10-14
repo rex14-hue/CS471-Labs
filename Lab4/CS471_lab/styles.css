@@ -1,0 +1,19 @@
+/* Navigation background */
+.topnav {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+/* Navigation links */
+.topnav a {
+  color: #000000;
+  text-align: center;
+  margin-right: 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Active page link */
+.topnav a.active {
+  color: #008CBA;
+}
