@@ -1,0 +1,84 @@
+.lab-links a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.lab-links [id="new-tab-link"] {
+  background-color: #a9f3b5;
+  color: red;
+}
+
+.lab-links [id="same-tab-link"] {
+  background-color: #555555;
+  color: yellow;
+}
+
+.lab-links [id="plain-link"] {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.lab-links a[id]:visited {
+  color: violet;
+}
+
+.lab-links a[id]:hover {
+  background-color: #dddddd;
+  color: blue;
+}
+
+.lab-links a[id]:active {
+  background-color: orange;
+  color: black;
+}
+
+.formatting-title {
+  color: green;
+  background-color: beige;
+  padding: 10px;
+}
+
+.listing-title {
+  background-color: cadetblue;
+  color: white;
+  padding: 10px;
+}
+
+.fruit-table,
+.camel-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+}
+
+.fruit-table {
+  width: 180px;
+}
+
+.fruit-table caption {
+  font-weight: bold;
+}
+
+.fruit-table th,
+.fruit-table td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.camel-table {
+  width: 80%;
+}
+
+.camel-table th,
+.camel-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.camel-table img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}

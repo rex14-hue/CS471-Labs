@@ -1,0 +1,95 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %}Tables{% endblock title %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+  <table class="fruit-table">
+    <caption>Table 1: Table of Fruits and Their Prices</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Fruit</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Apple</td>
+        <td>$0.25</td>
+      </tr>
+      <tr>
+        <td>Orange</td>
+        <td>$0.50</td>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>$1.00</td>
+      </tr>
+      <tr>
+        <td>Pineapple</td>
+        <td>$2.00</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td><strong>$3.75</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table class="camel-table">
+    <caption>Table 2: A more complex sample table</caption>
+
+    <thead>
+      <tr>
+        <th rowspan="2">
+          <img src="{% static 'desert.jpg' %}"
+               alt="Sand dunes in the desert"
+               width="200" height="160">
+        </th>
+        <th colspan="4">
+          Camelid comparison<br>
+          Approximate as of 6/2011
+        </th>
+      </tr>
+      <tr>
+        <th scope="col"># of humps</th>
+        <th scope="col">Indigenous region</th>
+        <th scope="col">Spits?</th>
+        <th scope="col">Produces wool?</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Dromedary</th>
+        <td>1</td>
+        <td>Arabian Peninsula</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th scope="row">Camels (bactrian)</th>
+        <td>2</td>
+        <td>Africa/Asia</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <th scope="row">Llamas</th>
+        <td>1</td>
+        <td>Andes Mountains</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock content %}
