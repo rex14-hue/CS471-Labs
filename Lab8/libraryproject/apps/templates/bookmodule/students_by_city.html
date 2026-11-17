@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Students by City{% endblock title %}
+
+{% block content %}
+  <h1>Students by City</h1>
+  <ul>
+    {% for city in cities %}
+      <li>{{ city.address__city }}: {{ city.student_count }}</li>
+    {% empty %}
+      <li>No students found.</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

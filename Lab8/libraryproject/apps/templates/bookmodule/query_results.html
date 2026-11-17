@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Query Results{% endblock title %}
+
+{% block content %}
+  <h1>Query Results</h1>
+
+  {% for book in books %}
+    <p>ID: {{ book.id }}, Title: {{ book.title }}</p>
+    <hr>
+  {% empty %}
+    <p>No books found.</p>
+  {% endfor %}
+{% endblock content %}
